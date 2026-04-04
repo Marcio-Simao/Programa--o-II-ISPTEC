@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package ex09.pkg02;
-
+import java.util.Scanner;
 /**
  *
  * @author LENOVO
