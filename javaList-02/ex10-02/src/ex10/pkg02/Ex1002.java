@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package ex10.pkg02;
-
+import java.util.Scanner;
 /**
  *
  * @author LENOVO
@@ -15,6 +15,8 @@ public class Ex1002 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        
     }
     
 }

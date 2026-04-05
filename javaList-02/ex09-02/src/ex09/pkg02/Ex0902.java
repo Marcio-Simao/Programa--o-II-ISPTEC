@@ -16,7 +16,7 @@ public class Ex0902 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
-        System.out.Println("Olá Mundo!");
+        System.out.println("Olá Mundo!");
     }
     
 }
