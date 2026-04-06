@@ -16,7 +16,10 @@ public class Ex1002 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
-        
+        if(02 == 2)
+        {
+            System.out.println("iguais!");
+        }    
     }
     
 }
