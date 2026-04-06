@@ -30,7 +30,6 @@ public class Ex1102 {
         System.out.print("Género(homem, mulher): ");
         genero = input.nextLine();
         
-        
         switch (genero.toLowerCase())
         {
             case "homem" :
