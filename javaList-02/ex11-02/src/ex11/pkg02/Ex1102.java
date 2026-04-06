@@ -37,14 +37,17 @@ public class Ex1102 {
                 if(anosTrabalho < 20)
                 {
                    salarioNovo =   salarioActual + (salarioActual * 0.03);
+                   System.out.println("Novo Salário: "+ salarioNovo);
                 }else{
                     if((anosTrabalho >= 20) && (anosTrabalho <= 30))
                     {
                         salarioNovo =   salarioActual + (salarioActual * 0.13);
+                        System.out.println("Novo Salário: "+ salarioNovo);
                     }else{
                         if(anosTrabalho > 30)
                         {
                             salarioNovo =   salarioActual + (salarioActual * 0.25);
+                            System.out.println("Novo Salário: "+ salarioNovo);
                         }    
                     }    
                 }    
