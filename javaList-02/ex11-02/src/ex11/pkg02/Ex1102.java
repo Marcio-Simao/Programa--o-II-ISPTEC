@@ -16,6 +16,7 @@ public class Ex1102 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
+        double salárioActual;
     }
     
 }
