@@ -25,9 +25,11 @@ public class Ex1102 {
         
         System.out.print("Anos de trabalho: ");
         anosTrabalho = input.nextInt();
+        input.nextLine();
         
-        System.out.print("Género: ");
+        System.out.print("Género(homem, mulher): ");
         genero = input.nextLine();
+        
         
         switch (genero.toLowerCase())
         {
