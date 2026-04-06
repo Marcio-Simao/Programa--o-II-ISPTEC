@@ -16,10 +16,57 @@ public class Ex1002 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
-        if(02 == 2)
+        
+        int diasAluguer, tipoCarro;
+        double km, precoDia, precoTot;
+        
+        System.out.print("quantos dias de aluguer: ");
+        diasAluguer = input.nextInt();
+        
+        System.out.print("quantos Km foram percorridos: ");
+        km = input.nextDouble();
+        
+        System.out.println("Tipo de carro");
+        System.out.println("Popular - [1]");
+        System.out.println("Luxo - [2]");
+        System.out.print(">> ");
+        tipoCarro = input.nextInt();
+        
+        switch(tipoCarro)
         {
-            System.out.println("iguais!");
+            case 1: //Tipo de carro popular
+                precoDia = diasAluguer * 25000;
+                if((km >= 1) || (km <= 100))
+                {
+                    precoTot = precoDia + 500;
+                    System.out.println("O valor a ser pago: "+ precoTot);
+                }else{
+                    if(km > 100)
+                    {
+                        precoTot = precoDia + 250;
+                        System.out.println("O valor a ser pago: "+ precoTot);
+                    }    
+                }
+            break;
+            case 2: //Tipo de carro Luxo
+                precoDia = diasAluguer * 45000;
+                if((km >= 1) || (km <= 200))
+                {
+                    precoTot = precoDia + 850;
+                    System.out.println("O valor a ser pago: "+ precoTot);
+                }else{
+                    if(km > 200)
+                    {
+                        precoTot = precoDia + 550;
+                        System.out.println("O valor a ser pago: "+ precoTot);
+                    }    
+                }
+            break;
+            default:
+                System.out.println("Valor Invalido!");
+            break;       
         }    
+                
     }
     
 }

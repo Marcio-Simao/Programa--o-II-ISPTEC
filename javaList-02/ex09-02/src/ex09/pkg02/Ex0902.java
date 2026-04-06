@@ -32,24 +32,40 @@ public class Ex0902 {
             if((ano % 4 == 0) || (ano % 400 == 0))
             {
                 //Ano Bissexo
-                if((mes >= 1) && (mes <= 12))
+                switch(mes)
                 {
-                    if(mes == 02)
-                    {
-                        if((dia >= 1) && (dia <= 29))
-                        {
-                            System.out.println("Data Valida!");
-                            System.out.println("O ano é bissexto!");
-                        }    
-                    }else{
-                        if((mes == 04) || (mes == 06) || (mes == 09) || (mes == 11))
-                        {
-                            
-                        }    
-                    }    
-                }else{
-                    System.out.println("Mês invalido!");
-                }    
+                    case 01:
+                        
+                    break; 
+                    case 02:
+                        
+                    break;
+                    case 03:
+                        
+                    break;
+                    case 04:
+                        
+                    break;
+                    case 05:
+                        
+                    break;
+                    case 06:
+                        
+                    break;
+                    case 07:
+                        
+                    break;
+                    case 08:
+                        
+                    break;
+                    case 09:
+                        
+                    break;
+                    default:
+                        System.out.println("Mês Invalido!");
+                    break;
+                }
+                    
             }else{
                 
             }    
