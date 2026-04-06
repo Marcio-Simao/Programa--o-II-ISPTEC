@@ -65,7 +65,7 @@ public class Ex1002 {
             default:
                 System.out.println("Valor Invalido!");
             break;       
-        }   //kyb4   
+        }    
                 
     }
     
