@@ -53,7 +53,23 @@ public class Ex1102 {
                 }    
             break;     
             case "mulher" :
-                
+                if(anosTrabalho < 15)
+                {
+                   salarioNovo =   salarioActual + (salarioActual * 0.05);
+                   System.out.println("Novo Salário: "+ salarioNovo);
+                }else{
+                    if((anosTrabalho >= 15) && (anosTrabalho <= 20))
+                    {
+                        salarioNovo =   salarioActual + (salarioActual * 0.12);
+                        System.out.println("Novo Salário: "+ salarioNovo);
+                    }else{
+                        if(anosTrabalho > 20)
+                        {
+                            salarioNovo =   salarioActual + (salarioActual * 0.23);
+                            System.out.println("Novo Salário: "+ salarioNovo);
+                        }    
+                    }    
+                }
             break;
             default :
                 System.out.println("Não existe esse genero seu/sua panina!!");
