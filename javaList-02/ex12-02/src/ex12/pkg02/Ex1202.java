@@ -20,6 +20,33 @@ public class Ex1202 {
         double temp;
         
         System.out.print("Digite a temperatura em  graus Celsius: ");
+        temp = input.nextDouble();
+        
+        if(temp < 10)
+        {
+            System.out.println("Muito Frio! ");
+        }else{
+            if((temp >= 10) && (temp <= 17))
+            {
+                System.out.println("Frio");
+            }else{
+                if((temp > 17) && (temp <= 23))
+                {
+                    System.out.println("Tempo Bom! ");
+                }else{
+                    if((temp > 23) && (temp <= 27))
+                    {
+                        System.out.println("Calor! ");
+                    }else{
+                        if(temp > 27)
+                        {
+                            System.out.println("Perigo de exposição solar! ");
+                        }
+                    }
+                }
+            }
+                    
+        }
         
     }
     
