@@ -17,6 +17,10 @@ public class Ex1202 {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         
+        double temp;
+        
+        System.out.print("Digite a temperatura em  graus \n" + "Celsius");
+        
     }
     
 }
