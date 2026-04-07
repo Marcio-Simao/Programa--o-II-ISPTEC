@@ -19,6 +19,9 @@ public class Ex1302 {
         
         int show, quantBil;
         
+        System.out.print("Quantidade de bilhetes: ");
+        quantBil = input.nextInt();
+        
         System.out.println("S H O W ' S");
         System.out.print("[1] - Tao Tui");
         System.out.print("[2] - Mini Band e os Amigos");
@@ -30,18 +33,23 @@ public class Ex1302 {
         {
             case 1:
                 
+               System.out.println("Valor a ser pago: "+ quantBil * 15000);
+               System.out.println("Data: 03/04/2023 " + "Hora: 21:00");
             break;
             case 2:
-                
+               System.out.println("Valor a ser pago: "+ quantBil * 3500);
+               System.out.println("Data: 04/04/2023 " + "Hora: 17:00 ");
             break;
             case 3:
-                
+               System.out.println("Valor a ser pago: "+ quantBil * 5000);
+               System.out.println("Data: 12/04/2023 " + "Hora: 18:00"); 
             break;
             case 4:
-                
+               System.out.println("Valor a ser pago: "+ quantBil * 12000);
+               System.out.println("Data: 14/04/2023 " + "Hora: 18:00"); 
             break;
-            default
-            
+            default :
+                System.out.println("Este Show não existe!");
             break;        
         }
         
