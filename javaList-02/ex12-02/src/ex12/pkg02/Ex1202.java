@@ -19,7 +19,7 @@ public class Ex1202 {
         
         double temp;
         
-        System.out.print("Digite a temperatura em  graus \n" + "Celsius");
+        System.out.print("Digite a temperatura em  graus Celsius: ");
         
     }
     
