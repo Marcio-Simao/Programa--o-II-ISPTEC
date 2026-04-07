@@ -15,6 +15,8 @@ public class Ex1202 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        
     }
     
 }
