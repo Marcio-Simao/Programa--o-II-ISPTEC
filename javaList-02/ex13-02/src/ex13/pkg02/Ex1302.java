@@ -21,6 +21,7 @@ public class Ex1302 {
         
         System.out.print("Quantidade de bilhetes: ");
         quantBil = input.nextInt();
+        //input.nextInt();
         
         System.out.println("S H O W ' S");
         System.out.print("[1] - Tao Tui");
@@ -51,8 +52,6 @@ public class Ex1302 {
             default :
                 System.out.println("Este Show não existe!");
             break;        
-        }
-        
+        }   
     }
-    
 }
