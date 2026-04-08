@@ -19,41 +19,41 @@ public class Ex1502 {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         
-        int show, quantBil;
+        int p1, p2, p3, p4, p5;
         
-        System.out.print("Quantidade de bilhetes: ");
-        quantBil = input.nextInt();
-        //input.nextInt();
+        System.out.println("Telefonou para a vítima?");
+        System.out.println("[0] - Sim");
+        System.out.println("[1] - Não");
+        System.out.print(">> ");
+        p1 = input.nextInt();
         
-        System.out.println("S H O W ' S");
-        System.out.print("[1] - Tao Tui");
-        System.out.print("[2] - Mini Band e os Amigos");
-        System.out.print("[3] - Kalê");
-        System.out.print("[4] - Raio de Luz");
-        show = input.nextInt();
+        System.out.println("[2] - Esteve no local do crime?");
+        System.out.println("[0] - Sim");
+        System.out.println("[1] - Não");
+        System.out.print(">> ");
+        p2 = input.nextInt();
         
-        switch(show)
+        System.out.println("[3] - Mora perto da vítima?");
+        System.out.println("[0] - Sim");
+        System.out.println("[1] - Não");
+        System.out.print(">> ");
+        p3 = input.nextInt();
+        
+        System.out.println("[4] - Devia para a vítima?");
+        System.out.println("[0] - Sim");
+        System.out.println("[1] - Não");
+        System.out.print(">> ");
+        p4 = input.nextInt();
+        
+        System.out.println("[5] - Já trabalhou com a vítima?");
+        System.out.println("[0] - Sim");
+        System.out.println("[1] - Não");
+        System.out.print(">> ");
+        p5 = input.nextInt();
+        
+        if( (p1 + p2 + p3 + p4 + p5) == 3)
         {
-            case 1:
-                
-               System.out.println("Valor a ser pago: "+ quantBil * 15000);
-               System.out.println("Data: 03/04/2023 " + "Hora: 21:00");
-            break;
-            case 2:
-               System.out.println("Valor a ser pago: "+ quantBil * 3500);
-               System.out.println("Data: 04/04/2023 " + "Hora: 17:00 ");
-            break;
-            case 3:
-               System.out.println("Valor a ser pago: "+ quantBil * 5000);
-               System.out.println("Data: 12/04/2023 " + "Hora: 18:00"); 
-            break;
-            case 4:
-               System.out.println("Valor a ser pago: "+ quantBil * 12000);
-               System.out.println("Data: 14/04/2023 " + "Hora: 18:00"); 
-            break;
-            default :
-                System.out.println("Este Show não existe!");
-            break;        
+            System.out.println("Suspeito!");
         }   
     }
 }
