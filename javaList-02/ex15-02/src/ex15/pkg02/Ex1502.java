@@ -70,4 +70,3 @@ public class Ex1502 {
         }  
     }
 }
-1

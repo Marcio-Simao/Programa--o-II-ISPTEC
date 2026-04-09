@@ -118,7 +118,7 @@ public class Ex1602 {
                         }
                     }
                 }else{
-                    System.out.println("Valor invalido!");
+                    System.out.println("valor incorreto para o (I)");
                 }
             }            
         }
