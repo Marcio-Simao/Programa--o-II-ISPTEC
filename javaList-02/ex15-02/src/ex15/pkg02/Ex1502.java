@@ -22,38 +22,51 @@ public class Ex1502 {
         int p1, p2, p3, p4, p5;
         
         System.out.println("Telefonou para a vítima?");
-        System.out.println("[0] - Sim");
-        System.out.println("[1] - Não");
+        System.out.println("[1] - Sim");
+        System.out.println("[0] - Não");
         System.out.print(">> ");
         p1 = input.nextInt();
         
-        System.out.println("[2] - Esteve no local do crime?");
-        System.out.println("[0] - Sim");
-        System.out.println("[1] - Não");
+        System.out.println("Esteve no local do crime?");
+        System.out.println("[1] - Sim");
+        System.out.println("[0] - Não");
         System.out.print(">> ");
         p2 = input.nextInt();
         
-        System.out.println("[3] - Mora perto da vítima?");
-        System.out.println("[0] - Sim");
-        System.out.println("[1] - Não");
+        System.out.println("Mora perto da vítima?");
+        System.out.println("[1] - Sim");
+        System.out.println("[0] - Não");
         System.out.print(">> ");
         p3 = input.nextInt();
         
-        System.out.println("[4] - Devia para a vítima?");
-        System.out.println("[0] - Sim");
-        System.out.println("[1] - Não");
+        System.out.println("Devia para a vítima?");
+        System.out.println("[1] - Sim");
+        System.out.println("[0] - Não");
         System.out.print(">> ");
         p4 = input.nextInt();
         
-        System.out.println("[5] - Já trabalhou com a vítima?");
-        System.out.println("[0] - Sim");
-        System.out.println("[1] - Não");
+        System.out.println("Já trabalhou com a vítima?");
+        System.out.println("[1] - Sim");
+        System.out.println("[0] - Não");
         System.out.print(">> ");
         p5 = input.nextInt();
         
-        if( (p1 + p2 + p3 + p4 + p5) == 3)
+        if( (p1 + p2 + p3 + p4 + p5) == 2)
         {
             System.out.println("Suspeito!");
-        }   
+            
+        }else {
+            if( (p1 + p2 + p3 + p4 + p5) == 3 || (p1 + p2 + p3 + p4 + p5) == 4 )
+            {
+                System.out.println("Cúmplice!");
+                
+            }else{
+                if((p1 + p2 + p3 + p4 + p5) == 5){
+                    System.out.println("Assassino!");
+                }else{
+                    System.out.println("Inocente!");
+                }
+            }
+        }  
     }
 }
