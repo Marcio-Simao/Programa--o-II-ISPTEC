@@ -21,9 +21,14 @@ public class Ex0103 {
         int i;
         System.out.println("Olá Mundo!");
         
-        for(i = 0; i < 4; i++)
+        for(i = 1; i < 5; i++)
         {
             num[i] = num[i] * 2;
+        }
+        
+        for (int valor : num)
+        {
+            System.out.println(valor);
         }
     }
     
