@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package ex01.pkg03;
+package ex02.pkg03;
 import java.util.Scanner;
 /**
  *
  * @author LENOVO
  */
-public class Ex0103 {
+public class Ex0203 {
 
     /**
      * @param args the command line arguments
@@ -17,18 +17,22 @@ public class Ex0103 {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         
-        int[] num = {2, 5, 8, 11, 14};
-        int i;
+        int value = 2;
         
-        for(i = 1; i < 5; i++)
-        {
-            num[i] = num[i] * 2;
-        }
-        
-        for (int valor : num)
-        {
-            System.out.println(valor);
-        }
+        do{
+            if(value == 2 || value == 6)
+            {
+                System.out.println("*");
+            }else{
+                if(value == 3 || value == 9 || value == 10)
+                {
+                    System.out.print(value + " ");
+                }else{
+                    System.out.print(value * 2 + " ");
+                }
+            }
+            value++;
+        }while(value < 10);   
     }
     
 }
