@@ -18,6 +18,19 @@ public class Ex1602 {
         Scanner input = new Scanner(System.in);
         int I; 
         Double A, B, C; 
+        
+        System.out.print("I: ");
+        I = input.nextInt();
+        
+        System.out.print("A: ");
+        A = input.nextDouble();
+        
+        System.out.print("B: ");
+        B = input.nextDouble();
+        
+        System.out.print("C: ");
+        C = input.nextDouble();
+        
+        
     }
-    
 }
