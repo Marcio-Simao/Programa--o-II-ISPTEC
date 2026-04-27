@@ -23,6 +23,12 @@ public class Ex1803 {
             System.out.println("[1] - registrar compra");
             System.out.println("[0] -  Fechar loja");
             i = input.nextInt();
+            switch(i)
+            {
+                case 1:
+                    System.out.println("Nova compra!");
+                 break;
+            }
         }while(i != 0);
     }
     
