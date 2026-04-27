@@ -19,7 +19,7 @@ public class Ex1803 {
         int i = 0;
         do
         {
-            System.out.println("Cantina do Mama Dú");
+            System.out.println("Cantina do Mama Du");
             System.out.println("[1] - registrar compra");
             System.out.println("[0] -  Fechar loja");
             i = input.nextInt();
@@ -28,8 +28,11 @@ public class Ex1803 {
                 case 1:
                     System.out.println("Nova compra!");
                  break;
-                case 2: 
+                case 0: 
                     System.out.println("Loja fechada");
+                break;
+                default :
+                    System.out.println("Valor invalido!");
                 break;    
             }
         }while(i != 0);
