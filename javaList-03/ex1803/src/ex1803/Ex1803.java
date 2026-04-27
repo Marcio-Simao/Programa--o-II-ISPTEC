@@ -18,8 +18,8 @@ public class Ex1803 {
         int i = 0;
         do
         {
-            System.out.println();
-            System.out.println("[]");
+            System.out.println("Cantina do Mama Dú");
+            System.out.println("[1] - registrar compra");
             System.out.println("[0] -  Fechar loja");
             
         }while(i != 0);
