@@ -2,24 +2,27 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package ex17.pkg02;
+package ex1803;
 import java.util.Scanner;
-import java.util.Random;
 /**
  *
  * @author LENOVO
  */
-public class Ex1702 {
+public class Ex1803 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner input = new Scanner(System.in);
-        Random random = new Random();
-        
-        
+        int i = 0;
+        do
+        {
+            System.out.println();
+            System.out.println("[]");
+            System.out.println("[0] -  Fechar loja");
+            
+        }while(i != 0);
     }
     
 }

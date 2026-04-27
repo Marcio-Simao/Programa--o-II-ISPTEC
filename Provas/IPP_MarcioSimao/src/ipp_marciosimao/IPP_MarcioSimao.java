@@ -2,22 +2,32 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package ex17.pkg02;
+package ipp_marciosimao;
 import java.util.Scanner;
-import java.util.Random;
 /**
  *
  * @author LENOVO
  */
-public class Ex1702 {
+public class IPP_MarcioSimao {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // exercício 2
         Scanner input = new Scanner(System.in);
-        Random random = new Random();
+        
+        int temp, hora, mim;
+        
+        System.out.print("Digite um número: ");
+        temp = input.nextInt();
+        
+        hora = temp / 3600;
+        mim = temp % 3600;
+        System.out.println("Hora: "+ hora);
+        System.out.println("mim: "+ mim);
+        
+        
         
         
     }
