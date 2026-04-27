@@ -28,6 +28,9 @@ public class Ex1803 {
                 case 1:
                     System.out.println("Nova compra!");
                  break;
+                case 2: 
+                    System.out.println("Loja fechada");
+                break;    
             }
         }while(i != 0);
     }
