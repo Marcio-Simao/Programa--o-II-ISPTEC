@@ -15,13 +15,14 @@ public class Ex1803 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner input = new Scanner(System.in);
         int i = 0;
         do
         {
             System.out.println("Cantina do Mama Dú");
             System.out.println("[1] - registrar compra");
             System.out.println("[0] -  Fechar loja");
-            
+            i = input.nextInt();
         }while(i != 0);
     }
     
