@@ -16,15 +16,20 @@ public class Ex1903 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
+        int quant = 1;
         
         for(int i = 1; i <= 8; i++)
         {
-            System.out.println("i: "+ i);
+            //System.out.println("i: "+ i);
             for(int j = 1; j <= 8; j++)
             {
-              System.out.print("j: "+j);  
+                if(i != 1 && j != 1)
+                {
+                    quant = quant * 2;
+                }
+                System.out.println(" Quant:  "+ quant);
             }
-            System.out.println(" ");
+            //System.out.println(" ");
         }
     }
     
