@@ -18,7 +18,7 @@ public class Ex0104 {
         Scanner input = new Scanner(System.in);
         int [] num = new int[5];
         
-        for(int i = 0; i > 5; i++)
+        for(int i = 0; i < 5; i++)
         {
             System.out.print(i+" num: ");
             num[i] = input.nextInt();
