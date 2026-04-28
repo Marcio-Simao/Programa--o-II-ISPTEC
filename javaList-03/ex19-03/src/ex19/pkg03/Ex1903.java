@@ -18,19 +18,22 @@ public class Ex1903 {
         Scanner input = new Scanner(System.in);
         int quant = 1;
         
-        for(int i = 1; i <= 8; i++)
+        for(int i = 1; i <= 3; i++)
         {
-            //System.out.println("i: "+ i);
-            for(int j = 1; j <= 8; j++)
+            System.out.println("----------------");
+            for(int j = 1; j <= 3; j++)
             {
                 if(i == 1 && j == 1)
                 {
-                    System.out.println(" Quant:  ");
+                    
+                    System.out.println(" Quant:  "+ quant);
                 }else{
-                    System.out.println(" yayahj  ");
+                    quant = quant * 2;
+                    System.out.println(" yayahj: "+ quant);
                 }
                 
             }
+            System.out.println("----------------");
             //System.out.println(" ");
         }
     }
