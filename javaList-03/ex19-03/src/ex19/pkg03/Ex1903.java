@@ -20,21 +20,17 @@ public class Ex1903 {
         
         for(int i = 1; i <= 3; i++)
         {
-            System.out.println("----------------");
             for(int j = 1; j <= 3; j++)
             {
                 if(i == 1 && j == 1)
                 {
-                    
-                    System.out.println(" Quant:  "+ quant);
+                    quant = 1;
                 }else{
                     quant = quant * 2;
-                    System.out.println(" yayahj: "+ quant);
                 }
-                
             }
         }    
-        System.out.println("O Monge recebera "+ quant +" grãos de trigo");
+        System.out.println("O Monge recebera "+ quant +" graos de trigo");
     }
     
 }
