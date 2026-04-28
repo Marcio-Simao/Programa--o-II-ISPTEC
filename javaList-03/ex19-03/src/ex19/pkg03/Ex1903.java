@@ -33,9 +33,8 @@ public class Ex1903 {
                 }
                 
             }
-            System.out.println("----------------");
-            //System.out.println(" ");
-        }
+        }    
+        System.out.println("O Monge recebera "+ quant +" grãos de trigo");
     }
     
 }
