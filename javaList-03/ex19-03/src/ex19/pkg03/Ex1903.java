@@ -17,6 +17,15 @@ public class Ex1903 {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         
+        for(int i = 1; i < 8; i++)
+        {
+            System.out.println("i: "+ i);
+            for(int j = 1; j < 8; j++)
+            {
+              System.out.print("j: "+j);  
+            }
+            System.out.println(" ");
+        }
     }
     
 }
