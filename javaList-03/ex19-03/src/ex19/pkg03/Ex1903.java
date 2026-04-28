@@ -23,11 +23,13 @@ public class Ex1903 {
             //System.out.println("i: "+ i);
             for(int j = 1; j <= 8; j++)
             {
-                if(i != 1 && j != 1)
+                if(i == 1 && j == 1)
                 {
-                    quant = quant * 2;
+                    System.out.println(" Quant:  ");
+                }else{
+                    System.out.println(" yayahj  ");
                 }
-                System.out.println(" Quant:  "+ quant);
+                
             }
             //System.out.println(" ");
         }
