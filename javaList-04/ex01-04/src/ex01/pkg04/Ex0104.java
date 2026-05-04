@@ -32,11 +32,11 @@ public class Ex0104 {
                     System.out.println("yhe!");
                     System.out.println("i: "+ i);
                     System.out.println("j: "+ j);
-                }
-                    
+                }else{
+                    System.out.println(j+" num: "+ num[j]);
+                }    
             }   
         }
-        
     }
     
 }
