@@ -4,6 +4,7 @@
  */
 package ex02.pkg04;
 import java.util.Scanner;
+import 
 /**
  *
  * @author LENOVO
@@ -16,22 +17,24 @@ public class Ex0204 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
+        Random rand = new Random();
+        int numero = = rand.nextInt();
         int [][] matriz = new int [5][5];
         
-        for(int i = 0; i < 4; i++)
+        for(int i = 0; i < 5; i++)
         {
-            for(int j = 0; j < 4; j++)
+            for(int j = 0; j < 5; j++)
             {
-                System.out.println("[ "+ i +" ][ "+ j +" ]: ");
+                System.out.print("[ "+ i +" ][ "+ j +" ]: ");
                 matriz[i][j] = input.nextInt();
             }
         }
         
-        for(int i = 0; i < 4; i++)
+        for(int i = 0; i < 5; i++)
         {
-            for(int j = 0; j < 4; j++)
+            for(int j = 0; j < 5; j++)
             {
-                System.out.println("[ "+ i +" ][ "+ j +" ]: "+ matriz[i][j]);
+              
             }
         }
     }
