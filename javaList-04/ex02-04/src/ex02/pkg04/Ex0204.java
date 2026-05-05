@@ -22,7 +22,16 @@ public class Ex0204 {
         {
             for(int j = 0; j < 4; j++)
             {
-                System.out.println("[ "+ i +" ][ "+ j +" ]");
+                System.out.println("[ "+ i +" ][ "+ j +" ]: ");
+                matriz[i][j] = input.nextInt();
+            }
+        }
+        
+        for(int i = 0; i < 4; i++)
+        {
+            for(int j = 0; j < 4; j++)
+            {
+                System.out.println("[ "+ i +" ][ "+ j +" ]: "+ matriz[i][j]);
             }
         }
     }
