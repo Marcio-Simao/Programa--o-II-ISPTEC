@@ -17,26 +17,26 @@ public class Ex0104 {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         int [] num = new int[5];
-        boolean c = false;
+        int cont = 0;
         
         for(int i = 0; i < 5; i++)
         {
             System.out.print(i+" num: ");
             num[i] = input.nextInt();
+            
             for(int j = 0; j < 5; j++)
             {
-                if(( i != j) && (num[i] == num[j] ))
+                if(( i != j) && (num[i] == num[j]))
                 {
-                   c = false;
-                }else{
-                    c = true;
-                } 
+                   cont++;
+                }
             }
-            if(c == false)
+            if(cont > 0)
             {
                 System.out.println("já foi digitado!");
             }else{
                 System.out.println("num: "+ num[i]);
+                System.out.println("c: "+cont);
                 }
         }
     }
