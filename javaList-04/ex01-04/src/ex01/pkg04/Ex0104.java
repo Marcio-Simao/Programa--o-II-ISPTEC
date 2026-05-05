@@ -17,25 +17,27 @@ public class Ex0104 {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         int [] num = new int[5];
+        boolean c = false;
         
         for(int i = 0; i < 5; i++)
         {
             System.out.print(i+" num: ");
             num[i] = input.nextInt();
-        }
-        for(int i = 0; i < 5; i++)
-        {
             for(int j = 0; j < 5; j++)
             {
                 if(( i != j) && (num[i] == num[j] ))
                 {
-                    System.out.println("yhe!");
-                    System.out.println("i: "+ i);
-                    System.out.println("j: "+ j);
+                   c = false;
                 }else{
-                    System.out.println(j+" num: "+ num[j]);
-                }    
-            }   
+                    c = true;
+                } 
+            }
+            if(c == false)
+            {
+                System.out.println("já foi digitado!");
+            }else{
+                System.out.println("num: "+ num[i]);
+                }
         }
     }
     
