@@ -18,17 +18,18 @@ public class Ex0505 {
        Scanner sc = new Scanner(System.in);
         ArrayList<String> nomes = new ArrayList<>();
 
-        System.out.print("Quantos nomes deseja inserir? ");
-        int n = sc.nextInt();
-        sc.nextLine(); // limpar buffer
+        String opcao;
 
-        for (int i = 0; i < n; i++) {
+        do {
             System.out.print("Digite um nome: ");
-            String nome = sc.nextLine();
-            nomes.add(nome);
-        }
+            nomes.add(sc.nextLine());
 
-        System.out.println("Lista de nomes: " + nomes); 
+            System.out.print("Deseja continuar? (s/n): ");
+            opcao = sc.nextLine();
+
+        } while (opcao.equalsIgnoreCase("s"));
+
+        System.out.println("Lista final: " + nomes);
     }
     
 }
