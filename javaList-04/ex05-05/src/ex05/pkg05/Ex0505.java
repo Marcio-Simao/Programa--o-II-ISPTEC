@@ -16,6 +16,8 @@ public class Ex0505 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner (System.in);
+        ArrayList<Integer> listNum = new ArrayList<Integer>();
+        ArrayList<String> listaNomes = new ArrayList<String>(); 
     }
     
 }
