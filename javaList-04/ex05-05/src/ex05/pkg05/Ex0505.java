@@ -15,14 +15,22 @@ public class Ex0505 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        Scanner input = new Scanner (System.in);
-        ArrayList<Integer> listNum = new ArrayList<Integer>();
-        ArrayList<String> listaNomes = new ArrayList<String>(); 
+       ArrayList<String> nomes = new ArrayList<>();
+
+        nomes.add("Ana");
+        nomes.add("Carlos");
+        nomes.add("Maria");
+
+        System.out.println("Tamanho: "+ nomes.size());
         
-        listaNomes.add("Márcio");
+        System.out.println("Lista: " + nomes);
+
+        System.out.println("Primeiro nome: " + nomes.get(0));
+
+        nomes.remove("Carlos");
+
+        System.out.println("Lista atualizada: " + nomes);
         
-        System.out.println(listaNomes.get(0));
     }
     
 }
