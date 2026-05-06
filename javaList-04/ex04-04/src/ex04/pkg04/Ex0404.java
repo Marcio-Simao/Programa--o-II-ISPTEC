@@ -26,25 +26,31 @@ public class Ex0404 {
         
         for(int i = 0; i < 5; i++)
         {
-            k[i] = random.nextInt((100 - 0) + 1) + 1; 
+            k[i] = random.nextInt((10 - 0) + 1) + 1; 
+            System.out.println(k[i]);
         }
         
         for(int j = 0; j < 5; j++)
         {
             if(k[j] > 1)
             {
-                for(int i = 2; i < 100; i++)
+                
+            }    
+            for(int i = 2; i < 100; i++)
+            {
+                if((i > 2) && (i < Math.sqrt(k[j]) ) )
                 {
-                    if((i > 2) && (i < Math.sqrt(k[j]) ) )
+                    if(k[j] % i == 0) 
                     {
-                        if(k[j] % i == 0) 
-                        {
-                            //primo  
-                        } 
-                    }
+                    //não é primo  
+                    } 
+                } else{
+                    P.add(k[j]);
                 }
             }
         }
+        System.out.println("---");
+        System.out.println("P: "+ P);
         
     }
     
