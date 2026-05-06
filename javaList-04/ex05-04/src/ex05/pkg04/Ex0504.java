@@ -5,6 +5,7 @@
 package ex05.pkg04;
 import java.util.Scanner;
 import java.util.ArrayList;
+
 /**
  *
  * @author LENOVO
@@ -17,6 +18,7 @@ public class Ex0504 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
+        
         System.out.println("Olá Lua");
     }
     

@@ -15,22 +15,20 @@ public class Ex0505 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       ArrayList<String> nomes = new ArrayList<>();
+       Scanner sc = new Scanner(System.in);
+        ArrayList<String> nomes = new ArrayList<>();
 
-        nomes.add("Ana");
-        nomes.add("Carlos");
-        nomes.add("Maria");
+        System.out.print("Quantos nomes deseja inserir? ");
+        int n = sc.nextInt();
+        sc.nextLine(); // limpar buffer
 
-        System.out.println("Tamanho: "+ nomes.size());
-        
-        System.out.println("Lista: " + nomes);
+        for (int i = 0; i < n; i++) {
+            System.out.print("Digite um nome: ");
+            String nome = sc.nextLine();
+            nomes.add(nome);
+        }
 
-        System.out.println("Primeiro nome: " + nomes.get(0));
-
-        nomes.remove("Carlos");
-
-        System.out.println("Lista atualizada: " + nomes);
-        
+        System.out.println("Lista de nomes: " + nomes); 
     }
     
 }
