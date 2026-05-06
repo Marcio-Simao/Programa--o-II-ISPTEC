@@ -26,19 +26,26 @@ public class Ex0404 {
         
         for(int i = 0; i < 5; i++)
         {
-            k[i] = random.nextInt((100 - 1) + 1) + 1; 
+            k[i] = random.nextInt((100 - 0) + 1) + 1; 
         }
         
-        for(int i = 2; i < 100; i++)
+        for(int j = 0; j < 5; j++)
         {
-            if((i > 2) && (i < Math.sqrt(k[i]) ) )
+            if(k[j] > 1)
             {
-                if(k[i] % i == 0) 
+                for(int i = 2; i < 100; i++)
                 {
-                  //primo  
-                } 
+                    if((i > 2) && (i < Math.sqrt(k[j]) ) )
+                    {
+                        if(k[j] % i == 0) 
+                        {
+                            //primo  
+                        } 
+                    }
+                }
             }
         }
+        
     }
     
 }
