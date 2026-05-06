@@ -20,6 +20,11 @@ public class Ex0404 {
         int[] k = new int[5];
         ArrayList<Integer> P = new ArrayList<Integer>();
         
+        for(int i = 0; i < 5; i++)
+        {
+            System.out.print(i+" K: ");
+            k[i] = input.nextInt();
+        }
     }
     
 }
