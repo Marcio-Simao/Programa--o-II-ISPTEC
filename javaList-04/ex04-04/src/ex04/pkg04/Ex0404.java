@@ -5,6 +5,7 @@
 package ex04.pkg04;
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Random; // Importando a class
 /**
  *
  * @author LENOVO
@@ -19,11 +20,15 @@ public class Ex0404 {
         Scanner input = new Scanner (System.in);
         int[] k = new int[5];
         ArrayList<Integer> P = new ArrayList<Integer>();
+        Random random = new Random(); // criando o nome 
         
         for(int i = 0; i < 5; i++)
         {
-            System.out.print(i+" K: ");
-            k[i] = input.nextInt();
+            k[i] = random.nextInt((10 - 1) + 1) + 1; // gerando números aleatorios
+        }
+        for(int i = 0; i < 5; i++)
+        {
+            System.out.println(i+" K: "+ k[i]);
         }
     }
     
