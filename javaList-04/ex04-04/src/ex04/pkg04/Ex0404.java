@@ -24,7 +24,7 @@ public class Ex0404 {
         
         for(int i = 0; i < 5; i++)
         {
-            k[i] = random.nextInt((10 - 1) + 1) + 1; // gerando números aleatorios
+            k[i] = random.nextInt((100 - 1) + 1) + 1; // gerando números aleatorios, int numero = random.nextInt((max - min) + 1) + min;
         }
         for(int i = 0; i < 5; i++)
         {
