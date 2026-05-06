@@ -5,6 +5,7 @@
 package ex05.pkg04;
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  *
@@ -18,6 +19,8 @@ public class Ex0504 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
+        int [] num = new int[30];
+        Random ale = new Random();
         
         System.out.println("Olá Lua");
     }
