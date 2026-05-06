@@ -25,8 +25,8 @@ public class Ex0204 {
         {
             for(int j = 0; j < 3; j++)
             {
-                System.out.print("[ "+ i +" ][ "+ j +" ]: ");
-                matriz[i][j] = input.nextInt();
+               System.out.print("[ "+ i +" ][ "+ j +" ]: ");
+               matriz[i][j] = input.nextInt();
             }
         }
         
