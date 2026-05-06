@@ -5,7 +5,8 @@
 package ex04.pkg04;
 import java.util.Scanner;
 import java.util.ArrayList;
-import java.util.Random; // Importando a class
+import java.util.Random;
+import java.lang.Math;
 /**
  *
  * @author LENOVO
@@ -20,15 +21,23 @@ public class Ex0404 {
         Scanner input = new Scanner (System.in);
         int[] k = new int[5];
         ArrayList<Integer> P = new ArrayList<Integer>();
-        Random random = new Random(); // criando o nome 
+        Random random = new Random(); 
+        
         
         for(int i = 0; i < 5; i++)
         {
-            k[i] = random.nextInt((100 - 1) + 1) + 1; // gerando números aleatorios, int numero = random.nextInt((max - min) + 1) + min;
+            k[i] = random.nextInt((100 - 1) + 1) + 1; 
         }
-        for(int i = 0; i < 5; i++)
+        
+        for(int i = 2; i < 100; i++)
         {
-            System.out.println(i+" K: "+ k[i]);
+            if((i > 2) && (i < Math.sqrt(k[i]) ) )
+            {
+                if(k[i] % i == 0) 
+                {
+                  //primo  
+                } 
+            }
         }
     }
     
