@@ -15,21 +15,42 @@ public class Ex0505 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
-        ArrayList<String> nomes = new ArrayList<>();
+      Scanner sc = new Scanner(System.in);
 
-        String opcao;
+        int[] K = new int[15];
+        ArrayList<Integer> P = new ArrayList<>();
 
-        do {
-            System.out.print("Digite um nome: ");
-            nomes.add(sc.nextLine());
+        // Ler os 15 números
+        System.out.println("Digite 15 números inteiros:");
+        for (int i = 0; i < 15; i++) {
+            K[i] = sc.nextInt();
+        }
 
-            System.out.print("Deseja continuar? (s/n): ");
-            opcao = sc.nextLine();
+        // Verificar quais são primos
+        for (int i = 0; i < 15; i++) {
+            int n = K[i];
+            boolean ehPrimo = true;
 
-        } while (opcao.equalsIgnoreCase("s"));
+            if (n <= 1) {
+                ehPrimo = false;
+            } else {
+                for (int d = 2; d <= Math.sqrt(n); d++) {
+                    if (n % d == 0) {
+                        ehPrimo = false;
+                        break;
+                    }
+                }
+            }
 
-        System.out.println("Lista final: " + nomes);
+            if (ehPrimo) {
+                P.add(n);
+            }
+        }
+
+        // Mostrar resultado
+        System.out.println("Números primos:");
+        System.out.println(P);
+
+        sc.close();
     }
-    
 }

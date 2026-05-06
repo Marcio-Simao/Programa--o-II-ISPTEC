@@ -22,31 +22,34 @@ public class Ex0404 {
         int[] k = new int[5];
         ArrayList<Integer> P = new ArrayList<Integer>();
         Random random = new Random(); 
+        boolean test = false;
         
-        
-        for(int i = 0; i < 5; i++)
+        for(int i = 0; i < 50; i++)
         {
             k[i] = random.nextInt((10 - 0) + 1) + 1; 
             System.out.println(k[i]);
         }
         
-        for(int j = 0; j < 5; j++)
-        {
-            if(k[j] > 1)
-            {
-                
-            }    
+        for(int j = 0; j < 3; j++)
+        {   
+            
             for(int i = 2; i < 100; i++)
             {
-                if((i > 2) && (i < Math.sqrt(k[j]) ) )
+                if(k[j] != i)
                 {
                     if(k[j] % i == 0) 
                     {
-                    //não é primo  
-                    } 
-                } else{
-                    P.add(k[j]);
+                        //não é primo 
+                        test = false;
+                        System.out.println("nao e primo");
+                    }   
                 }
+                  
+            }
+            if(test == true)
+            {
+                P.add(k[j]);
+                System.out.println("e primo");
             }
         }
         System.out.println("---");
