@@ -6,7 +6,6 @@ package ex04.pkg04;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Random;
-import java.lang.Math;
 /**
  *
  * @author LENOVO
@@ -22,39 +21,38 @@ public class Ex0404 {
         int[] k = new int[5];
         ArrayList<Integer> P = new ArrayList<Integer>();
         Random random = new Random(); 
-        boolean test = false;
-        
-        for(int i = 0; i < 50; i++)
+       
+        //recebendo os valores
+        for(int i = 0; i < 5; i++)
         {
             k[i] = random.nextInt((10 - 0) + 1) + 1; 
             System.out.println(k[i]);
         }
-        
-        for(int j = 0; j < 3; j++)
-        {   
-            
-            for(int i = 2; i < 100; i++)
+        // Verificar
+        for (int i = 0; i < 5; i++) 
+        {
+            int n = k[i];
+            boolean ehPrimo = true;
+
+            if (n <= 1) 
             {
-                if(k[j] != i)
-                {
-                    if(k[j] % i == 0) 
+                ehPrimo = false;    
+            } else {
+                for (int d = 2; d <= Math.sqrt(n); d++) {
+                    if (n % d == 0) 
                     {
-                        //não é primo 
-                        test = false;
-                        System.out.println("nao e primo");
-                    }   
+                        ehPrimo = false;
+                        break;
+                    }
                 }
-                  
             }
-            if(test == true)
+            if (ehPrimo) 
             {
-                P.add(k[j]);
-                System.out.println("e primo");
+                P.add(n);
             }
         }
-        System.out.println("---");
-        System.out.println("P: "+ P);
-        
+        //Mostrar
+        System.out.println("Números primos:");
+        System.out.println(P);
     }
-    
 }
