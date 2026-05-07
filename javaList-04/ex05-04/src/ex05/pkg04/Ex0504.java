@@ -21,12 +21,24 @@ public class Ex0504 {
         Scanner input = new Scanner(System.in);
         int [] num = new int[30];
         Random ale = new Random();
+        int n, quant = 0;
         
         for(int i = 0; i < 30; i++ )
         {
             num[i] = ale.nextInt((10 - 1) + 1) + 1; 
         }
-        System.out.println("Olá Lua");
+        
+        System.out.println("Digite um número: ");
+        n = ale.nextInt((5 - 2) + 1) + 2;
+        
+        for(int i = 0; i < 30; i++)
+        {
+            if(n == num[i])
+            {
+                quant++;
+            }
+        }
+        
     }
     
 }
