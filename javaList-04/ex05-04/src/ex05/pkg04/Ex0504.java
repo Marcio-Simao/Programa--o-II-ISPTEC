@@ -22,6 +22,10 @@ public class Ex0504 {
         int [] num = new int[30];
         Random ale = new Random();
         
+        for(int i = 0; i < 30; i++ )
+        {
+            num[i] = ale.nextInt((10 - 1) + 1) + 1; 
+        }
         System.out.println("Olá Lua");
     }
     
