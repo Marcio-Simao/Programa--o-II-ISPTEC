@@ -19,6 +19,7 @@ public class Ex0504 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
+        ArrayList<Integer> lista = new ArrayList<>();
         int [] num = new int[30];
         Random ale = new Random();
         int n, quant = 0;
@@ -38,6 +39,11 @@ public class Ex0504 {
                 quant++;
             }
         }
+        for (int i : num) {
+            lista.add(i);
+        }
+
+        System.out.println(lista);
         System.out.println("Quant: "+ quant);
     }
     
