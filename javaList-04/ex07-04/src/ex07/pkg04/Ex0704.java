@@ -18,23 +18,23 @@ public class Ex0704 {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         Random random = new Random();
-        double[][] equipas = new double [5][3];
+        double[][] equipas = new double [3][2];
         int[] maiorAltura = new int [5];
         
-        for(int i = 0; i < 5; i++)
+        for(int i = 0; i < 2; i++) // Equipas
         {
             System.out.println(i+"Equipa");
-            for(int j = 0; j < 3; j++) 
+            for(int j = 0; j < 3; j++) //jogadores
             {
-                System.out.println();
-                equipas[i][j] = input.nextDouble();
+                System.out.print(j+"-Jogador: ");
+                equipas[j][i] = input.nextDouble();
             }
             System.out.println("-----------");
         }
         
-        for(int i = 0; i < 5; i++)
+        for(int i = 0; i < 3; i++)
         {
-            for(int j = 0; j < 3; j++) 
+            for(int j = 0; j < 2; j++) 
             {
                 System.out.print(equipas[i][j]+" "); 
             }
