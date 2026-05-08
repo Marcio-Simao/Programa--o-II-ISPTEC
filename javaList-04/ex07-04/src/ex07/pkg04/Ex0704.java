@@ -19,15 +19,29 @@ public class Ex0704 {
         Scanner input = new Scanner(System.in);
         Random random = new Random();
         double[][] equipas = new double [3][2];
-        int[] maiorAltura = new int [5];
+        double[] maiorAltura = new double [2];
         
         for(int i = 0; i < 2; i++) // Equipas
         {
-            System.out.println(i+"Equipa");
+            System.out.println(i+"-Equipa");
             for(int j = 0; j < 3; j++) //jogadores
             {
                 System.out.print(j+"-Jogador: ");
                 equipas[j][i] = input.nextDouble();
+            }
+            System.out.println("-----------");
+        }
+        
+        for(int i = 0; i < 2; i++) // Equipas
+        {
+            System.out.println(i+"-Equipa");
+            for(int j = 0; j < 3; j++) //jogadores
+            {
+                if(maiorAltura[i] <  equipas[j][i])
+                {
+                    maiorAltura[i] =  equipas[j][i];
+                }
+                
             }
             System.out.println("-----------");
         }
@@ -40,6 +54,15 @@ public class Ex0704 {
             }
             System.out.println(" ");
         }
+        for(int i = 0; i < 3; i++)
+        {
+            for(int j = 0; j < 2; j++) 
+            {
+                System.out.print(equipas[i][j]+" "); 
+            }
+            System.out.println(" ");
+        }
     }
+    
     
 }
