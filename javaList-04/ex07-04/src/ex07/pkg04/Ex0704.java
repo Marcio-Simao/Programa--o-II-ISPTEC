@@ -46,18 +46,10 @@ public class Ex0704 {
             System.out.println("-----------");
         }
         
-        for(int i = 0; i < 3; i++)
-        {
-            for(int j = 0; j < 2; j++) 
-            {
-                System.out.print(equipas[i][j]+" "); 
-            }
-            System.out.println(" ");
-        }
-        for(int i = 0; i < 3; i++)
+        for(int i = 0; i < 2; i++)
         {
             System.out.println(i+"-Equipa");
-            System.out.print("maior altura: "+maiorAltura[i]); 
+            System.out.println("maior altura: "+maiorAltura[i]); 
             System.out.println("------");
         }
     }
