@@ -21,7 +21,15 @@ public class Ex0804 {
         {
             for(int j = 0; j < 10; j++)
             {
-                
+                if(i < j)
+                {
+                    matriz[i][j] = (2 * i) + (7 * j) - 2;
+                }else{
+                    if(i > j)
+                    {
+                        matriz[i][j] = (4 * i * 3) - (5 * j * 2) + 1;
+                    }
+                }
             }
         }
     }
