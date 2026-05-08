@@ -38,6 +38,13 @@ public class Ex0504 {
                 quant++;
             }
         }
+        for(int i = 0; i < 30; i++ )
+        {
+           System.out.println(i+" num: "+ num[i]); 
+        }
+        
+        System.out.println("n: "+ n);
+        System.out.println("Quant: "+ quant);
         
     }
     
