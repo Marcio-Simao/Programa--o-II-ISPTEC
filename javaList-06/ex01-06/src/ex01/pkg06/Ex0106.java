@@ -18,8 +18,20 @@ public class Ex0106 {
         String a, b;
         int r;
         a = "A";
-        b = "B";
-        System.out.println((char) a.compareTo(b));
+        b = "a";
+        r = a.compareTo(b);
+        
+        if(r < 0)
+        {
+            System.out.println(a+" é menor que "+b);
+        }else{
+            if(r > 0)
+            {
+                System.out.println(a+" é maior que "+b);
+            }else{
+                System.out.println(a+" = "+b);
+            }
+        }
         
     }
     
