@@ -15,6 +15,12 @@ public class Ex0106 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        String a, b;
+        int r;
+        a = "A";
+        b = "B";
+        System.out.println((char) a.compareTo(b));
+        
     }
     
 }
