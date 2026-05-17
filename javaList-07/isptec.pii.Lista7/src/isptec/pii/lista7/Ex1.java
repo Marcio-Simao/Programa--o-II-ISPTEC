@@ -17,7 +17,7 @@ public class Ex1 {
         num = input.nextInt();
         
         for(int i = 1; i < 12; i++){
-            System.out.print(num + " X " + i + " = " + (num * i));
+            System.out.println(num + " X " + i + " = " + (num * i));
         }
     } 
 }
