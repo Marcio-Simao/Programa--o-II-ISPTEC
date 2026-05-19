@@ -9,6 +9,23 @@ import java.util.Scanner;
  * @author LENOVO
  */
 public class Ex03 {
-    
+    public static String mes(int n){
+     String mes;   
+     switch(n)
+     {
+        case 1:
+            mes = "Janeiro";
+            return mes;
+        break;
+        case 2:
+            mes = "Fevereiro";
+        break;
+        case 3:
+            mes = "Marco";
+        break;
+        
+     }
+        
+    }
     
 }

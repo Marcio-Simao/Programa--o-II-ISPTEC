@@ -36,6 +36,7 @@ public class IsptecPiiLista7 {
                         int N;
                         System.out.print("Digite um número inteiro (de 1 a 12): ");
                         N = input.nextInt();
+                        Ex03.mes(N);
                         
                     }
                 }
