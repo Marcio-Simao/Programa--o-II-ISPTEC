@@ -34,7 +34,8 @@ public class IsptecPiiLista7 {
                 }else{
                     if(num == 3){
                         int N;
-                        System.out.print(" ");
+                        System.out.print("Digite um número inteiro (de 1 a 12): ");
+                        N = input.nextInt();
                         
                     }
                 }
