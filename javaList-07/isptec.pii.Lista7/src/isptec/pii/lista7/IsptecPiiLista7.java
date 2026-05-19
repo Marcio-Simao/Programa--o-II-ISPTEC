@@ -31,6 +31,12 @@ public class IsptecPiiLista7 {
                     System.out.print("Nome do Aluno: ");
                     nome = input.nextLine();
                     Ex02.relatorio(nome);
+                }else{
+                    if(num == 3){
+                        int N;
+                        System.out.print(" ");
+                        
+                    }
                 }
             }
         }
