@@ -17,7 +17,11 @@ public class Ex0904 {
        // TODO code application logic here
         int[][] alunos = new int[10][3];
         
-        
+        for(int i = 0; i < 10; i++){
+            for(int j = 0; j < 3; j++){
+                
+            }
+        }
         
     }
     
