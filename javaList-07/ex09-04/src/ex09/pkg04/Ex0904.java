@@ -27,8 +27,9 @@ public class Ex0904 {
         System.out.println("1ª PROVA | 2ª PROVA | 3ª PROVA");
         for(int i = 0; i < 10; i++){
             for(int j = 0; j < 3; j++){
-                System.out.print(alunos[i][j] + "\t");
+                System.out.print( "    " + alunos[i][j] + "   ");
             }
+            System.out.println(" ");
         }
         
     }
