@@ -55,7 +55,7 @@ public class Ex0904 {
                 pior = notas[i][2];
                 prova = 3;
             }
-
+            
             System.out.println("Aluno " + (i + 1) + " teve pior nota na prova " + prova);
         }
     }
