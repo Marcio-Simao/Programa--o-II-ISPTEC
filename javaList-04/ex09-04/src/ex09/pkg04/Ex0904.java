@@ -20,13 +20,13 @@ public class Ex0904 {
         Random rand = new Random();
         int[][] notas = new int[5][3];
         int[][] provas = new int[3][5];
-        int piorNota = 0;
+        int piorNota = 20;
         
         for(int i = 0; i < 5; i++)
         {
             for(int j = 0; j < 3; j++)
             {
-                notas[i][j] = rand.nextInt(20);
+                notas[i][j] = rand.nextInt(21);
             }
         }
         System.out.printf("%-12s %-12s %-12s %-12s\n", "", "1º PROVA", "2º PROVA", "3º PROVA");
@@ -41,24 +41,22 @@ public class Ex0904 {
         }
         for(int i = 0; i < 5; i++)
         {
-            for(int j = 0; j < 3; j++)
+            int pior = notas[i][0];
+            int prova = 1;
+
+            if(notas[i][1] < pior)
             {
-                if(piorNota > notas[i][j]){
-                    piorNota = notas[i][j];
-                    provas[j][i] = i + 1;  
-                }
+                pior = notas[i][1];
+                prova = 2;
             }
-        }
-        System.out.println(" ");
-        for(int j = 0; j < 3; j++)
-        {
-            System.out.print((j + 1) + " Prova: ");
-            for(int i = 0; i < 5; i++)
+
+            if(notas[i][2] < pior)
             {
-                System.out.print(provas[j][i]);
+                pior = notas[i][2];
+                prova = 3;
             }
-            System.out.println();
+
+            System.out.println("Aluno " + (i + 1) + " teve pior nota na prova " + prova);
         }
-        
     }
 }
