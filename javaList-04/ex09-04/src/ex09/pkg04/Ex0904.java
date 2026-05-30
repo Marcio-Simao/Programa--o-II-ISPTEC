@@ -21,6 +21,7 @@ public class Ex0904 {
         int[][] notas = new int[5][3];
         int[][] provas = new int[3][5];
         int piorNota = 0;
+        
         for(int i = 0; i < 5; i++)
         {
             for(int j = 0; j < 3; j++)
@@ -51,7 +52,7 @@ public class Ex0904 {
         System.out.println(" ");
         for(int j = 0; j < 3; j++)
         {
-            System.out.print((j + 1) + "Prova: ");
+            System.out.print((j + 1) + " Prova: ");
             for(int i = 0; i < 5; i++)
             {
                 System.out.print(provas[j][i]);
