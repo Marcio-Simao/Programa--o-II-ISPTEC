@@ -45,6 +45,10 @@ public class Ex1204 {
             
         }  while(op != 0);  
         System.out.println(nomes);
+        System.out.print("Digite um número: ");
+        int num = input.nextInt();
+        
+        
     }
     
 }
