@@ -21,13 +21,13 @@ public class Ex1004 {
         Scanner input = new Scanner(System.in);
         Random rand = new Random();
         ArrayList<Integer> numList = new ArrayList<>();
-        int num;
-        
+        //preenchendo o ArrayList
         for(int i = 0; i < 20 ; i++){
             int n;
             n = rand.nextInt(11);
             numList.add(n);
         }
+        //Apresentando o ArrayList
         for(int i = 0; i < 20 ; i++){
             System.out.print(numList.get(i));
             if(i != 0){
@@ -36,10 +36,19 @@ public class Ex1004 {
                 }
             }
         }
-        System.out.println();
-        System.out.print("Digite um número: ");
-        num = rand.nextInt(10);
-        System.out.println(num);
         
+        //Pegando o número novo
+        System.out.println();
+        System.out.print("Digite o número que deseja inserir: ");
+        int novoNum = rand.nextInt(10);
+        System.out.println(novoNum);
+        
+        // inserir depois de qual número
+        System.out.print("Depois de qual número? ");
+        int ref = rand.nextInt(5);
+        System.out.println(ref);
+        
+        int posicao = numList.indexOf(ref);
+        System.out.println("Posição: "+ posicao);
     }
 }
