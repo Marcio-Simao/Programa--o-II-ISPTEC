@@ -38,7 +38,7 @@ public class Ex1004 {
         }
         System.out.println();
         System.out.print("Digite um número: ");
-        num = rand.nextInt();
+        num = rand.nextInt(10);
         System.out.println(num);
         
     }
