@@ -28,14 +28,7 @@ public class Ex1004 {
             numList.add(n);
         }
         //Apresentando o ArrayList
-        for(int i = 0; i < 20 ; i++){
-            System.out.print(numList.get(i));
-            if(i != 0){
-                if(i % 4 == 0){
-                    System.out.println();
-                }
-            }
-        }
+        System.out.print(numList);
         
         //Pegando o número novo
         System.out.println();
@@ -48,7 +41,13 @@ public class Ex1004 {
         int ref = rand.nextInt(5);
         System.out.println(ref);
         
+        //pegando a posição
         int posicao = numList.indexOf(ref);
         System.out.println("Posição: "+ posicao);
+        
+        numList.add(posicao, novoNum);
+        
+        //Apresentando o ArrayList
+        System.out.print(numList);
     }
 }
