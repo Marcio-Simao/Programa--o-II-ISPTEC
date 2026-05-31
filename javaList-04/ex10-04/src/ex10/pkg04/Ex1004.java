@@ -3,6 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package ex10.pkg04;
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Random;
 
 /**
  *
@@ -15,6 +18,28 @@ public class Ex1004 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        Random rand = new Random();
+        ArrayList<Integer> numList = new ArrayList<>();
+        int num;
+        
+        for(int i = 0; i < 20 ; i++){
+            int n;
+            n = rand.nextInt(11);
+            numList.add(n);
+        }
+        for(int i = 0; i < 20 ; i++){
+            System.out.print(numList.get(i));
+            if(i != 0){
+                if(i % 4 == 0){
+                    System.out.println();
+                }
+            }
+        }
+        System.out.println();
+        System.out.print("Digite um número: ");
+        num = rand.nextInt();
+        System.out.println(num);
+        
     }
-    
 }
