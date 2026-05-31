@@ -48,7 +48,13 @@ public class Ex1204 {
         System.out.print("Digite um número: ");
         int num = input.nextInt();
         
-        
+        for(int i = nomes.size() - 1; i >= 0; i--){
+            System.out.println(i);
+            if((nomes.get(i)).length() < num){
+               nomes.remove(i);
+            }
+        }
+        System.out.println(nomes);
     }
     
 }
