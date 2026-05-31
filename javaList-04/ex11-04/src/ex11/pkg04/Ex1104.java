@@ -21,15 +21,25 @@ public class Ex1104 {
         Random rand = new Random();
         ArrayList<Integer> numList = new ArrayList<>();
         
+        //Adicionando valores no ArrayList
         for(int i = 0; i < 10; i++){
-            int n;
-            n = rand.nextInt(10);
+            int n = rand.nextInt(10);
             numList.add(n);
         }
         
+        //Apresentando o ArrayList na tela
         System.out.println(numList);
+        //pegando o valor N
+        System.out.print("Digite um número: ");
+        int N = rand.nextInt(5);
+        System.out.println(N);
         
-        
+        //removendo os N números 
+        for(int i = 0; i < N; i++ ){
+            numList.remove(i);
+        }
+        System.out.println(numList);
+            
     }
     
 }
