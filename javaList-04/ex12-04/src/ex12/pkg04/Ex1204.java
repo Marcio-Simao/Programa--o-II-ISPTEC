@@ -44,7 +44,7 @@ public class Ex1204 {
             }
             
         }  while(op != 0);  
-        System.out.print(nomes);
+        System.out.println(nomes);
     }
     
 }
