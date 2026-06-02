@@ -11,66 +11,52 @@ import java.util.ArrayList;
  */
 
 public class Ex1304 {
-
-    public static void preenVetor(char a){
-        Scanner input = new Scanner(System.in);
-        
-        for(int i = 0; i < 2; i++){
-            
-            System.out.print("Digite letra: ");
-            
-        }
-    }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        ArrayList<String> alfa = new ArrayList<>();
-        String letra;
-        String[] vetor1 = new String[2];
-        String[] vetor2 = new String[2];
-        String[] vetor3 = new String[2];
-        String[] vetor4 = new String[2];
-        String[] vetor5 = new String[2];
+        ArrayList<char[]> lista = new ArrayList<>();
+        char letra;
+        char[] vetor1 = new char[2];
+        char[] vetor2 = new char[2];
+        char[] vetor3 = new char[2];
+        char[] vetor4 = new char[2];
+        char[] vetor5 = new char[2];
         
         System.out.println("Array 1");
         for(int i = 0; i < 2; i++){
-            
             System.out.print("Digite a "+ ( i + 1 ) +"º letra: ");
-            vetor1[i] = input.nextLine(); 
-            alfa.add(vetor1[i]);
+            vetor1[i] = input.next().charAt(0); 
         }
         
         System.out.println("Array 2");
         for(int i = 0; i < 2; i++){
             
            System.out.print("Digite a "+ ( i + 1 ) +"º letra: ");
-            vetor2[i] = input.nextLine();
-            alfa.add(vetor2[i]);
+            vetor2[i] = input.next().charAt(0);
         }
         System.out.println("Array 3");
         for(int i = 0; i < 2; i++){
             
             System.out.print("Digite a "+ ( i + 1 ) +"º letra: ");
-            vetor3[i] = input.nextLine();
-            alfa.add(vetor3[i]);
+            vetor3[i] = input.next().charAt(0);
         }
         System.out.println("Array 4");
         for(int i = 0; i < 2; i++){
-            
             System.out.print("Digite a "+( i + 1 )+"º letra: ");
-            vetor4[i] = input.nextLine();
-            alfa.add(vetor4[i]);
+            vetor4[i] = input.next().charAt(0);
         }
         System.out.println("Array 5");
         for(int i = 0; i < 2; i++){
-            
             System.out.print("Digite a "+ ( i + 1 ) +"º letra: ");
-            vetor5[i] = input.nextLine();
-            alfa.add(vetor5[i]);
+            vetor5[i] = input.next().charAt(0);
         }
-        
-        System.out.print(alfa);
+        lista.add(vetor1);
+        lista.add(vetor2);
+        lista.add(vetor3);
+        lista.add(vetor4);
+        lista.add(vetor5);
+        System.out.print(lista);
         System.out.print("Digite uma letra: ");
-        letra = input.nextLine();
+        letra = input.next().charAt(0);
         
     }
     
