@@ -18,7 +18,7 @@ public class Ex1504 {
                     System.out.println("");    
                 break;
                 case 1: 
-                    System.out.println("Insira um número: ");
+                    System.out.print("Insira um número: ");
                     int n = input.nextInt();
                     numList.add(n);
                 break;
@@ -28,6 +28,20 @@ public class Ex1504 {
             }   
         }while(op != 0);
         System.out.println(numList);
-    }
-    
+        int soma = 0;
+        for(int i = 0; i < numList.size(); i++){
+            
+            for(int j = 1; j < numList.get(i); j++){
+                if(numList.get(i) % j == 0){
+                    soma += j;
+                }
+            }
+            if(soma == numList.get(i)){
+                numList.remove(i);
+                i--;
+            }
+            soma = 0;
+        }
+        System.out.println(numList);
+    }  
 }
