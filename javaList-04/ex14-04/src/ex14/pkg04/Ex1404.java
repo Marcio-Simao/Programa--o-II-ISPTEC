@@ -47,6 +47,13 @@ public class Ex1404 {
         System.out.print("Digite um número: ");
         int num = input.nextInt();
         
-        
+        for(int i = 0; i < grupos.size(); i++){
+            ArrayList<Integer> lista = grupos.get(i);
+            if(lista.contains(num) == true){
+                grupos.remove(i);
+                i--;
+            }
+        }
+        System.out.println(grupos);         
     }
 }
