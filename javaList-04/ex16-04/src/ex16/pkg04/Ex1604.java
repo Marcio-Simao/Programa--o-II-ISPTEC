@@ -12,27 +12,28 @@ public class Ex1604 {
         int n1 = input.nextInt();
         System.out.print("Qauntos números queres inserir na lista 2: ");
         int n2 = input.nextInt();
-        System.out.print("Qauntos números queres inserir na lista 3: ");
-        int n3 = input.nextInt();
-        
+        //recebendo os valores na lista 1
         System.out.println("lista 1");
         for(int i = 0; i < n1; i++){
             System.out.print("Insira um número: ");
             int n = input.nextInt();
             lista1.add(n);
         }
+        //recebendo os valores na lista 2
         System.out.println("lista 2");
-        for(int i = 0; i < n1; i++){
+        for(int i = 0; i < n2; i++){
             System.out.print("Insira um número: ");
             int n = input.nextInt();
             lista2.add(n);
         }
-        System.out.println("lista 3");
+        //inserisndo os valores na lista 3
         for(int i = 0; i < n1; i++){
-            System.out.print("Insira um número: ");
-            int n = input.nextInt();
-            lista3.add(n);
+            lista3.add(lista1.get(i));
         }
+        for(int i = 0; i < n2; i++){
+            lista3.add(lista2.get(i));
+        }
+        //apresentando as listas
         System.out.println(lista1);
         System.out.println(lista2);
         System.out.println(lista3);
