@@ -1,13 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ex01.pkg05;
-
-/**
- *
- * @author LENOVO
- */
 public class livro {
+    // Campos do registo (atributos publicos)
+    public String titulo; 
+    public String autor; 
+    public float preco;
     
+    // Construtor vazio
+    public livro() { }
+    
+    public livro(String titulo, String autor, float preco){
+        this.titulo = titulo;
+        this.autor = autor;
+        this.preco = preco;
+        
+    }
 }

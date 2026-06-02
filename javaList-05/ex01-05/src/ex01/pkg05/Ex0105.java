@@ -1,20 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package ex01.pkg05;
-
-/**
- *
- * @author LENOVO
- */
+import java.util.Scanner;
 public class Ex0105 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        livro li = new livro();
+        
+        System.out.print("Digite Titulo: ");
+        li.titulo = input.nextLine();
+        
+        System.out.print("Digite o nome do autor: ");
+        li.autor = input.nextLine();
+        
+        System.out.print("Digite o preço: ");
+        li.preco = input.nextFloat();
+        
+        System.out.println("=========================");
+        System.out.println("Titulo: "+ li.titulo);
+        System.out.print("Autor: "+ li.titulo);
+        System.out.print("Preço: "+ li.preco);
+        System.out.println("=========================");
+        
+        
     }
-    
 }
