@@ -1,3 +1,4 @@
+
 package ex05.pkg05;
 public class Agenda {
     // Campos do registo (atributos privados)
@@ -17,7 +18,7 @@ public class Agenda {
     public void setNome(String nome){this.nome = nome;}
     public void setNumero(int numero){this.numero = numero;}
     // mostra número
-    public void mostrarnumero(){
+    public void mostraNumero(){
         System.out.println("Número: "+ numero);
     }
 }
