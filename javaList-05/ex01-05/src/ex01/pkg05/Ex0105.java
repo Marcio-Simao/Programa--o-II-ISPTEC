@@ -16,8 +16,8 @@ public class Ex0105 {
         
         System.out.println("=========================");
         System.out.println("Titulo: "+ li.titulo);
-        System.out.print("Autor: "+ li.titulo);
-        System.out.print("Preço: "+ li.preco);
+        System.out.println("Autor: "+ li.autor );
+        System.out.println("Preço: "+ li.preco);
         System.out.println("=========================");
         
         
