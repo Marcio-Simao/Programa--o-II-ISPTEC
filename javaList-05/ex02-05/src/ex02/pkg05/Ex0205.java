@@ -10,9 +10,9 @@ public class Ex0205 {
             Pontu p = new Pontu();
             System.out.println("\n--- Ponto " + i + " ---");
             System.out.print("X: ");
-            p.getX(input.nextFloat());
+            p.setX(input.nextFloat());
             System.out.print("Y: ");
-            p.getY(input.nextFloat());
+            p.setY(input.nextFloat());
             pontus.add(p);
         }
         // encontrar o ponto com menor X

@@ -15,8 +15,8 @@ public class Pontu {
     public float getX(){return x;}
     public float getY(){return y;}
     // Setters — alteram os valores dos campos
-    public void getX(float x){this.x = x;}
-    public void getY(float y){this.y = y;}
+    public void setX(float x){this.x = x;}
+    public void setY(float y){this.y = y;}
     
     // mostra o ponto no formato (x, y)
     public void mostrarPonto(){
