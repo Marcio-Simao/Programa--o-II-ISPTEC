@@ -1,20 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package ex02.pkg05;
-
-/**
- *
- * @author LENOVO
- */
+import java.util.Scanner;
+import java.util.ArrayList;
 public class Ex0205 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        ArrayList<Pontu> pontus = new ArrayList<>();
+        Pontu p = new Pontu();
+        
+        for(int i = 0; i < 5; i++){
+            System.out.print("X: ");
+            p.getX(input.nextFloat());
+            System.out.print("Y: ");
+            p.getY(input.nextFloat());
+            pontus.add(p);
+        }
+        
     }
     
 }
