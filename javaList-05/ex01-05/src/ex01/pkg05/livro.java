@@ -7,11 +7,10 @@ public class livro {
     
     // Construtor vazio
     public livro() { }
-    
+    // Construtor com todos os campos
     public livro(String titulo, String autor, float preco){
         this.titulo = titulo;
         this.autor = autor;
-        this.preco = preco;
-        
+        this.preco = preco;  
     }
 }

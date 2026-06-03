@@ -18,8 +18,7 @@ public class Ex0405 {
                     System.out.print("Nome: ");
                     pessoa.setNome(input.nextLine());
                     System.out.print("Data de nascimento: ");
-                    pessoa.setDataNasc(input.nextInt());
-                    input.nextLine();
+                    pessoa.setDataNasc(input.nextLine());
                     
                     System.out.print("Cidade: ");
                     end.setCidade(input.nextLine());
@@ -45,8 +44,7 @@ public class Ex0405 {
                     System.out.println("Valor Incorreto!");
                 break;    
             }
-        }while(op != 0);
-        
+        }while(op != 0); 
     }
     static void Menu(){
         System.out.println("=========================");
@@ -54,6 +52,5 @@ public class Ex0405 {
         System.out.println("[2] - Pessoas registradas");
         System.out.println("[0] - Sair");
         System.out.print(">> ");
-    }
-    
+    } 
 }
