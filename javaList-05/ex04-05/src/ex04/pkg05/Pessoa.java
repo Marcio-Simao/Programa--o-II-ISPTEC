@@ -26,7 +26,9 @@ public class Pessoa {
         System.out.println("========== D A D O S =========");
         System.out.println("Nome: "+ nome);
         System.out.println("Data de Nascimento: "+ dataNasc);
-        endereco.MostrarEnderco();
+        if(endereco != null){
+            endereco.MostrarEnderco();
+        }
         System.out.println("==============================");
     }
 }
