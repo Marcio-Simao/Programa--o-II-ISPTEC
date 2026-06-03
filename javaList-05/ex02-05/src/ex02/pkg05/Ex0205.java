@@ -29,9 +29,11 @@ public class Ex0205 {
                 menorY = p;
             }
         }
-        System.out.print("ponto com menor X: P(" + menorX.getX() + ","+ menorX.getY()+")");
-        System.out.print("ponto com menor y: P(" + menorX.getX() + ","+ menorX.getY()+")");
-    
+        // mostrar resultados
+        System.out.println("\n=== RESULTADOS ===");
+        System.out.print("ponto com menor X: ");
+        menorX.mostrarPonto();
+        System.out.print("ponto com menor y: ");
+        menorY.mostrarPonto();
     }
-    
 }
