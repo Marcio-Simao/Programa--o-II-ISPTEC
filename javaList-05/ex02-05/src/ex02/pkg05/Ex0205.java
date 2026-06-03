@@ -5,9 +5,10 @@ public class Ex0205 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         ArrayList<Pontu> pontus = new ArrayList<>();
-        Pontu p = new Pontu();
         
         for(int i = 0; i < 5; i++){
+            Pontu p = new Pontu();
+            System.out.println("\n--- Ponto " + i + " ---");
             System.out.print("X: ");
             p.getX(input.nextFloat());
             System.out.print("Y: ");
