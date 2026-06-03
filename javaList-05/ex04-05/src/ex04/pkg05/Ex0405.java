@@ -35,8 +35,11 @@ public class Ex0405 {
                 case 2: 
                     if(pessoas.size() == 0){
                         System.out.println("Nenhuma pessoa registrada");
+                    }else{
+                        for(int i = 0; i < pessoas.size(); i++){
+                            pessoas.get(i).mostrarDados();
+                        }
                     }
-                    
                 break;
                 default:
                     System.out.println("Valor Incorreto!");
