@@ -5,7 +5,7 @@ public class Ex0205 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         ArrayList<Pontu> pontus = new ArrayList<>();
-        
+        // ler os 5 pontos
         for(int i = 0; i < 5; i++){
             Pontu p = new Pontu();
             System.out.println("\n--- Ponto " + i + " ---");
@@ -15,7 +15,23 @@ public class Ex0205 {
             p.getY(input.nextFloat());
             pontus.add(p);
         }
-        
+        // encontrar o ponto com menor X
+        Pontu menorX = pontus.get(0); // assume o primeiro como menor
+        for(Pontu P :  pontus){
+            if(menorX.getX() > P.getX()){
+                menorX = P;
+            }
+        }
+        // encontrar o ponto com menor y
+        Pontu menorY = pontus.get(0); // assume o primeiro como menor
+        for(Pontu p : pontus){
+            if(menorY.getY() > p.getY()){
+                menorY = p;
+            }
+        }
+        System.out.print("ponto com menor X: P(" + menorX.getX() + ","+ menorX.getY()+")");
+        System.out.print("ponto com menor y: P(" + menorX.getX() + ","+ menorX.getY()+")");
+    
     }
     
 }
