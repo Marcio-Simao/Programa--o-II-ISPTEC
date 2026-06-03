@@ -29,8 +29,13 @@ public class Ex0405 {
                     end.setNumPorta(input.nextInt());
                     
                     pessoa.setEndereco(end);
+                    
+                    pessoas.add(pessoa);
                 break;
                 case 2: 
+                    if(pessoas.size() == 0){
+                        System.out.println("Nenhuma pessoa registrada");
+                    }
                     
                 break;
                 default:
